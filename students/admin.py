@@ -6,5 +6,5 @@ from .models import Student
 class StudentAdmin(admin.ModelAdmin):
     # This controls which columns you see in the list
     list_display = ('student_number', 'last_name', 'first_name', 'course', 'year_level')
-    # This adds a search bar
+    # This adds a search bar for last name and student number
     search_fields = ('last_name', 'student_number')
